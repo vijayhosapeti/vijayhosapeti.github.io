@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Hotel Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#booking">Booking</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to Our Hotel</h2>
+            <p>Experience the best stay with us.</p>
+        </section>
+
+        <section id="rooms">
+            <h2>Our Rooms</h2>
+            <div class="room">
+                <h3>Deluxe Room</h3>
+                <p>Description of Deluxe Room</p>
+                <button onclick="bookRoom('Deluxe Room')">Book Now</button>
+            </div>
+            <div class="room">
+                <h3>Standard Room</h3>
+                <p>Description of Standard Room</p>
+                <button onclick="bookRoom('Standard Room')">Book Now</button>
+            </div>
+        </section>
+
+        <section id="booking">
+            <h2>Booking Form</h2>
+            <form id="bookingForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="roomType">Room Type:</label>
+                <select id="roomType" name="roomType" required>
+                    <option value="Deluxe Room">Deluxe Room</option>
+                    <option value="Standard Room">Standard Room</option>
+                </select>
+                <label for="checkIn">Check-In Date:</label>
+                <input type="date" id="checkIn" name="checkIn" required>
+                <label for="checkOut">Check-Out Date:</label>
+                <input type="date" id="checkOut" name="checkOut" required>
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: hosapetiv@gmail.com</p>
+            <p>Phone: +123 456 7890</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Hotel Management System</p>
+    </footer>
+
+    <!-- <script src="scripts.js"></script> -->
+</body>
+</html>
